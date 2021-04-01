@@ -1,25 +1,25 @@
 {
   "files": {
     "main.css": "/BookingApp/static/css/main.77961113.chunk.css",
-    "main.js": "/BookingApp/static/js/main.cb75c105.chunk.js",
-    "main.js.map": "/BookingApp/static/js/main.cb75c105.chunk.js.map",
+    "main.js": "/BookingApp/static/js/main.960ce73f.chunk.js",
+    "main.js.map": "/BookingApp/static/js/main.960ce73f.chunk.js.map",
     "runtime-main.js": "/BookingApp/static/js/runtime-main.94dbcf39.js",
     "runtime-main.js.map": "/BookingApp/static/js/runtime-main.94dbcf39.js.map",
     "static/css/2.d22f252f.chunk.css": "/BookingApp/static/css/2.d22f252f.chunk.css",
-    "static/js/2.c6306167.chunk.js": "/BookingApp/static/js/2.c6306167.chunk.js",
-    "static/js/2.c6306167.chunk.js.map": "/BookingApp/static/js/2.c6306167.chunk.js.map",
+    "static/js/2.4943f4c0.chunk.js": "/BookingApp/static/js/2.4943f4c0.chunk.js",
+    "static/js/2.4943f4c0.chunk.js.map": "/BookingApp/static/js/2.4943f4c0.chunk.js.map",
     "static/js/3.0f03a045.chunk.js": "/BookingApp/static/js/3.0f03a045.chunk.js",
     "static/js/3.0f03a045.chunk.js.map": "/BookingApp/static/js/3.0f03a045.chunk.js.map",
     "index.html": "/BookingApp/index.html",
     "static/css/2.d22f252f.chunk.css.map": "/BookingApp/static/css/2.d22f252f.chunk.css.map",
     "static/css/main.77961113.chunk.css.map": "/BookingApp/static/css/main.77961113.chunk.css.map",
-    "static/js/2.c6306167.chunk.js.LICENSE.txt": "/BookingApp/static/js/2.c6306167.chunk.js.LICENSE.txt"
+    "static/js/2.4943f4c0.chunk.js.LICENSE.txt": "/BookingApp/static/js/2.4943f4c0.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.94dbcf39.js",
     "static/css/2.d22f252f.chunk.css",
-    "static/js/2.c6306167.chunk.js",
+    "static/js/2.4943f4c0.chunk.js",
     "static/css/main.77961113.chunk.css",
-    "static/js/main.cb75c105.chunk.js"
+    "static/js/main.960ce73f.chunk.js"
   ]
 }
