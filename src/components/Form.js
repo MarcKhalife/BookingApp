@@ -21,8 +21,6 @@ const AddBooking = ({addBooking}) => {
         //clear form
         setName("");
         setEmail("");
-        setDate(new Date());
-        setTime(new Date());
     }
 
     return (
@@ -44,7 +42,7 @@ const AddBooking = ({addBooking}) => {
                     <label className="form-label" htmlFor = "date">Date</label>
                     <div> 
                     <DatePicker id='date'  className='form-control' selected={date} onChange={d => setDate(d)} 
-                    dateFormat="dd/mm/yyyy"
+                    dateFormat="dd/MM/yyyy"
                     showMonthDropdown
                     showYearDropdown
                     dropdownMode="select"
