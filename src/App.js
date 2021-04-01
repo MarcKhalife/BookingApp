@@ -10,7 +10,7 @@ function App() {
   //get bookings from database on load
   useEffect(() => {
     const getBookings = async () =>{
-    const res = await fetch('http://localhost:8080/')
+    const res = await fetch('bookingskws-backend.herokuapp.com')
     const data = await res.json() 
     setBookings(data);
   }
@@ -19,7 +19,7 @@ function App() {
 
   //add a booking to database
   const addBooking = async(booking) => {
-    const res = await fetch('http://localhost:8080/', {
+    const res = await fetch('bookingskws-backend.herokuapp.com', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ function App() {
 
   //Delete booking
   const onDelete = async (id) => {
-    const res = await fetch(`http://localhost:8080/${id}`, {
+    const res = await fetch(`bookingskws-backend.herokuapp.com`, {
       method: 'DELETE',
     })
       if (res.status === 200){
