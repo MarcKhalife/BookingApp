@@ -10,9 +10,9 @@ const Booking = ({ booking, onDelete }) => {
           {booking.email}
         </div>
         <div>
-          {moment(booking.date).format('DD/MM/YYYY')}
-          {"--"}
-          {booking.time}
+          {moment.utc(booking.date).format('DD/MM/YYYY')}
+          {" at "}
+          {moment.utc(booking.time, 'hh:mm:ss').format('h:mm a')}
         </div>
       </div>
       <button className="dlt-btn" value='Delete' onClick={() => onDelete(booking.id)}>Delete</button>

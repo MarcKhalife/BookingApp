@@ -3,6 +3,7 @@ import './App.css';
 import Form from './components/Form';
 import Bookings from './components/Bookings';
 
+const URL = "https://bookingskws-backend.herokuapp.com/"
 function App() {
   //state of bookings
   const [bookings, setBookings] = useState([])
@@ -10,7 +11,7 @@ function App() {
   //get bookings from database on load
   useEffect(() => {
     const getBookings = async () =>{
-    const res = await fetch('bookingskws-backend.herokuapp.com')
+    const res = await fetch(URL)
     const data = await res.json() 
     setBookings(data);
   }
@@ -19,7 +20,7 @@ function App() {
 
   //add a booking to database
   const addBooking = async(booking) => {
-    const res = await fetch('bookingskws-backend.herokuapp.com', {
+    const res = await fetch(URL, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json'
@@ -31,6 +32,7 @@ function App() {
       //add new booking to state
       const data = await res.json()
       setBookings([...bookings, data[0]])
+      console.log(data[0])
     } else{
       alert('Error Adding Booking')
     }
@@ -38,7 +40,7 @@ function App() {
 
   //Delete booking
   const onDelete = async (id) => {
-    const res = await fetch(`bookingskws-backend.herokuapp.com`, {
+    const res = await fetch(URL+id, {
       method: 'DELETE',
     })
       if (res.status === 200){

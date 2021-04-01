@@ -44,6 +44,7 @@ const AddBooking = ({addBooking}) => {
                     <label className="form-label" htmlFor = "date">Date</label>
                     <div> 
                     <DatePicker id='date'  className='form-control' selected={date} onChange={d => setDate(d)} 
+                    dateFormat="dd/mm/yyyy"
                     showMonthDropdown
                     showYearDropdown
                     dropdownMode="select"
